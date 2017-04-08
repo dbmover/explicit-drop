@@ -1,0 +1,13 @@
+{
+    "name": "dbmover/explicit-drop",
+    "description": "Dbmover plugin to explicitly drop objects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marijn Ophorst",
+            "email": "marijn@monomelodies.nl"
+        }
+    ],
+    "require": {}
+}
