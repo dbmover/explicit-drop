@@ -2,9 +2,9 @@
 
 namespace Dbmover\ExplicitDrop;
 
-use Dbmover\Core\DeferrablePlugin;
+use Dbmover\Core;
 
-class Plugin extends DeferrablePlugin
+class Plugin extends Core\Plugin
 {
     public function __invoke(string $sql) : string
     {
