@@ -6,8 +6,13 @@ use Dbmover\Core;
 
 class Plugin extends Core\Plugin
 {
+    /** @var string */
     public $description = 'Explicitly dropping objects...';
 
+    /**
+     * @param string $sql
+     * @return string
+     */
     public function __invoke(string $sql) : string
     {
         preg_match_all('@^DROP .*?;$@ms', $sql, $matches, PREG_SET_ORDER);
